@@ -12,6 +12,12 @@ body{
     font-size: 50px;
 }
 
+.main-layout{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-height: 100%;
+}
 
 .intro{
     height: 600px;
@@ -20,7 +26,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    flex: 0 0 1500px;
 }
 
 .intro-full-name{
@@ -34,6 +40,7 @@ body{
     height: auto;
     padding: 20px;
     border: 1px solid transparent;
+    left: -75px;
 }
 
 .intro-job-title{
@@ -44,8 +51,29 @@ body{
     animation: semiTextDrop 3s linear;
     position: relative;
     text-transform: uppercase;
-    top: -10px;
+    top: -20px;
+    left: 125px;
 }
+
+.nav{
+    margin-right: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.material-symbols-outlined{
+    color: white;
+    font-size: 75px !important;
+    font-variation-settings: 'FILL' 0, 'GRAD' 0, 'wght' 250;
+    padding-bottom: 75px;
+}
+
+.material-symbols-outlined:hover{
+    color: #34df34;
+}
+
 
 @keyframes textDrop {
     
