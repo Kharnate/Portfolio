@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap'); /*font-family: 'My Soul', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap'); /*font-family: 'Playball', cursive; */
+
+body{
+    background-color: #182634 !important;
+}
+
+.logo-text{
+    color: white;
+    font-family: "Playball", cursive;
+    margin: 50px 0 0 75px;
+    font-size: 50px;
+}
+
+
+.intro{
+    height: 600px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.intro-full-name{
+    color:#34df34;
+    font-family: 'My Soul', cursive;
+    animation: textDrop 3s linear;
+    position: relative;
+    box-sizing: border-box;
+    font-size: 100px;
+    max-width: 600px;
+    height: auto;
+    padding: 20px;
+    border: 1px solid transparent;
+}
+
+.intro-job-title{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    animation-delay: 3s;
+    animation: semiTextDrop 3s linear;
+    position: relative;
+    text-transform: uppercase;
+    top: -10px;
+}
+
+@keyframes textDrop {
+    
+}
+
+@keyframes semiTextDrop {
+    
+}
