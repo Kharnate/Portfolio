@@ -26,7 +26,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 0 0 1500px;
 }
 
 .intro-full-name{
@@ -35,24 +34,22 @@ body{
     animation: textDrop 3s linear;
     position: relative;
     box-sizing: border-box;
-    font-size: 100px;
+    font-size: 550%;
     max-width: 600px;
     height: auto;
     padding: 20px;
     border: 1px solid transparent;
-    left: -75px;
 }
 
 .intro-job-title{
     color: white;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
+    font-size: 155%;
     animation-delay: 3s;
     animation: semiTextDrop 3s linear;
     position: relative;
     text-transform: uppercase;
     top: -20px;
-    left: 125px;
 }
 
 .nav{
