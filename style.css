@@ -3,42 +3,33 @@
 
 body{
     background-color: #182634 !important;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .logo-text{
     color: white;
     font-family: "Playball", cursive;
-    margin: 50px 0 0 75px;
-    font-size: 50px;
+    font-size: 350%;
 }
 
 .main-layout{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    max-height: 100%;
-}
-
-.intro{
-    height: 600px;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .intro-full-name{
     color:#34df34;
     font-family: 'My Soul', cursive;
-    animation: textDrop 3s linear;
     position: relative;
     box-sizing: border-box;
     font-size: 550%;
-    max-width: 600px;
+    max-width: 100%;
+    max-height: 100%;
     height: auto;
-    padding: 20px;
-    border: 1px solid transparent;
+    padding-top: 8%;
+    padding-right: 25% !important;
 }
 
 .intro-job-title{
@@ -49,33 +40,54 @@ body{
     animation: semiTextDrop 3s linear;
     position: relative;
     text-transform: uppercase;
-    top: -20px;
+    padding-top: 1%;
+    
 }
 
 .nav{
-    margin-right: 75px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: sticky;
+    position: fixed;
+    left: 92%;
+    margin-right: 1%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .material-symbols-outlined{
     color: white;
     font-size: 75px !important;
     font-variation-settings: 'FILL' 0, 'GRAD' 0, 'wght' 250;
-    padding-bottom: 75px;
+    padding-bottom: 20%;
 }
 
 .material-symbols-outlined:hover{
     color: #34df34;
 }
 
-
-@keyframes textDrop {
-    
+.open-about-me{
+    color: rgba(179, 0, 179, 0.7);
+    margin-top: 26%;
+    font-family: 'MinecraftiaRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 130%;
+                                                
 }
 
-@keyframes semiTextDrop {
-    
+.nav-tags{
+    color: rgba(179, 0, 179, 0.7);
+    font-family: 'MinecraftiaRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 130%;
+}
+
+.about-me-passage{
+    color: white;
+}
+
+.skills-comtainer{
+    margin-top: 15%;
 }
