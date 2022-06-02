@@ -76,7 +76,7 @@ body{
                                                 
 }
 
-.close-about-me{
+.close-about-me, .open-skills, .close-skills{
     color: rgba(179, 0, 179, 0.7);
     font-family: 'MinecraftiaRegular';
     font-weight: normal;
@@ -90,4 +90,9 @@ body{
 
 .skills-comtainer{
     margin-top: 15%;
+}
+
+.skills-icons{
+    color: white;
+    font-size: 550%;
 }
