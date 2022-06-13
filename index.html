@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Karan Patel">
         <meta name="keywords" content="Karan Patel Portfolio Website">
         <meta name="description" content="Karan Patel Portfolio">
@@ -14,8 +14,8 @@
         <title>Karan Patel</title>
     </head>
     <body>
-        <script src="index.js"></script>
-        <div class="home-section" id="home-section">
+        <!-- HOME SECTION -->
+        <section class="home-section" id="home-section">
             <div class="logo">
                 <h1 class="logo-text">KP</h1>
                 <div class="logo-design"></div>
@@ -24,37 +24,43 @@
                 <h2 class="intro-name">Karan Patel</h2>
                 <h3 class="intro-title">Junior Software Developer | Front End</h3>
             </div>
-            <div class="nav-section">
-                <div class="nav-splitter-design"></div>
-                <nav>
-                    <a href="#home-section"><span title="Home" class="material-symbols-outlined icon-home">home</span></a>
-                    <a href="#about-section"><span title="About Me" class="material-symbols-outlined icon-about-me"> person</span></a>
-                    <a href="#skills-section"><span title="Skills" class="material-symbols-outlined icon-skills">developer_mode</span></a>
-                    <a href="#project-section"><span title="Projects" class="material-symbols-outlined icon-project">folder_open</span></a>
-                    <a href="#contact-section"><span title="Contact Me" class="material-symbols-outlined icon-contact-me">contacts</span></a>
-                </nav>
-                <div class="nav-splitter-design"></div>
-            </div>
-        </div>
-        <div class="about-section section" id="about-section">
-            <h3 class="tags">&lt;about&gt;</h3>
-            <div class="about-sub-section">
-                <h3>&lt;about&gt;</h3>
-                <div class="photo">
+        </section>
 
-                </div>
-                <div>
-                    <p class="about-passage">
-                        I got my first role as a Junior Software Developer in 2011. I am part of Front-End team. 
-                        I will be graduate in Dec 2022. Currently, I am focusing on building responisve web pages
-                        and my next goal is to learn React. (Replace the paragraph later)
-                    </p>
-                </div>
+        <!-- NAV SECTION -->
+        <section class="nav-section">
+            <div class="nav-splitter-design"></div>
+            <nav>
+                <a href="#home-section"><span title="Home" class="material-symbols-outlined icon-home">home</span></a>
+                <a href="#about-section"><span title="About Me" class="material-symbols-outlined icon-about-me"> person</span></a>
+                <a href="#skills-section"><span title="Skills" class="material-symbols-outlined icon-skills">developer_mode</span></a>
+                <a href="#project-section"><span title="Projects" class="material-symbols-outlined icon-project">folder_open</span></a>
+                <a href="#contact-section"><span title="Contact Me" class="material-symbols-outlined icon-contact-me">contacts</span></a>
+            </nav>
+            <div class="nav-splitter-design"></div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="about-section section" id="about-section">
+        <h3 class="tags">&lt;about&gt;</h3>
+        <div class="about-sub-section">
+            <h3>&lt;about&gt;</h3>
+            <div class="photo">
+
             </div>
-            <h3 class="tags">&lt;/about&gt;</h3>
+            <div>
+                <p class="about-passage">
+                    I got my first role as a Junior Software Developer in 2011. I am part of Front-End team. 
+                    I will be graduate in Dec 2022. Currently, I am focusing on building responisve web pages
+                    and my next goal is to learn React. (Replace the paragraph later)
+                </p>
+            </div>
         </div>
-        <div class="section-splitter"></div>
-        <div class="skills-section section" id="skills-section">
+        <h3 class="tags">&lt;/about&gt;</h3>
+        </section>
+       <div class="section-splitter"></div>
+
+       <!-- SKILLS SECTION -->
+        <section class="skills-section section" id="skills-section">
             <h3 class="tags">&lt;skills&gt;</h3>
             <div class="skills-container">                
                 <div class="skills-container-one">
@@ -69,10 +75,67 @@
                     <i class="devicon-git-plain skill-icon"></i>
                     <i class="devicon-github-original skill-icon"></i>
                     <i class="devicon-java-plain skill-icon"></i>
-                    <i class="devicon-java-plain"></i>
+                    <i class="devicon-androidstudio-plain skill-icon"></i>
                 </div>
             </div>
             <h3 class="tags">&lt;/skills&gt;</h3>
-        </div>
+        </section> 
+        <div class="section-splitter"></div>
+
+        <!-- PROJECT SECTION -->
+        <section class="project-section section" id="project-section">
+            <h3 class="tags">&lt;projects&gt;</h3>
+            <div class="project-details">
+                <button class="collapsible">Grocery List</button>
+                <div class="content">
+                    <p>
+                        <a title="Go To Project" target="_blank" href="https://github.com/Kharnate/Product-Tracking">
+                            For this project I used SQLite Database to build a grocery list app. The data is saved 
+                            into the database and display the results in a RecycleView. This 
+                            project lasted for 2 weeks and I learned more about Java and Android 
+                            Studio. 
+                        </a>
+                    </p>
+                </div>
+                <button class="collapsible">Order A Car</button>
+                <div class="content">
+                    <p>
+                        <a title="Go To Project" target="_blank" href="https://github.com/quaide/order-a-car">
+                            Created an Uber like GUI application with two types of user rider and driver. This project had a 
+                            group of 6 people. In this project I did Front-End work and my task was to make a GUI design for 
+                            Login Scene, Driver Scene, Rider Scene and Registraion Scene.  
+                        </a>
+                    </p>
+                </div>
+                <button class="collapsible">Product Tracking</button>
+                <div class="content">
+                    <p>
+                        <a title="Go To Project" target="_blank" href="https://github.com/Kharnate/Product-Tracking">
+                            Software for a media player production facility that will keep track 
+                            of what products are produced. Program includes the catalog, allows 
+                            user to enter new product, employee accounts can be made, production 
+                            statistic can be displayed and total display on number of production 
+                            for different types. The time period for this project was 6 weeks. 
+                            During this time I experienced C++ and CLion.
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <h3 class="tags">&lt;/projects&gt;</h3>
+        </section>
+        <div class="section-splitter"></div>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section section">
+            <h3 class="tags">&lt;contact&gt;</h3>
+
+            <h3 class="tags">&lt;/contact&gt;</h3>
+        </section>
+
+        <!-- FOOTER -->
+        <Footer>
+
+        </Footer>
+        <script src="index.js"></script>
     </body>
 </html>

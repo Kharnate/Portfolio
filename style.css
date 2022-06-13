@@ -1,23 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap'); /*font-family: 'My Soul', cursive;*/
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap'); /*font-family: 'Playball', cursive; */
 
-
 /*
-    ******************
-    ** HOME SECTION **
-    ******************
+    ****************
+    * HOME SECTION *
+    ****************
 */
 
 body{
     background-color: #182634 !important;
-    overflow: hidden;
+    overflow-x: hidden !important;
     overflow-y: scroll;
 }
 
 .logo-text{
     color: white;
     font-family: "Playball", cursive;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     margin: 0.3em 0em 0em 1em;
     position: relative;
     z-index: 0;
@@ -26,17 +25,18 @@ body{
 .logo-design{
     background-color: #182634;
     height: .3em;
-    width: 7em;
+    width: 5.6em;
     position: absolute;
     transform: rotate(-20deg);
-    margin: -2.9em 0em 0em 4.4em !important;
+    margin: -2.5em 0em 0em 3.5em !important;
     z-index: 1;
 }
 
 .intro-background{
-    height: 30em;
+    height: 25em;
     width: 75%;
-    margin: 4em auto 0 auto;
+    text-align: center;
+    margin: 3em auto 0 auto;
     box-sizing: border-box;
     box-shadow: 0em 4px 100px 10px rgba(52, 223, 52, 0.67);
     display: flex;
@@ -47,23 +47,33 @@ body{
 .intro-name{
     color: #34df34;
     font-family: 'My Soul', cursive;
-    font-size: 5rem;
-    margin: 0em 0em 0em 1em;
+    font-size: 3.5rem;
+    margin: 0em 1em 0em 1em;
 }
 
 .intro-title{
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5rem;
-    margin: .3em 1em 0em 5em;
     text-transform: uppercase;
+    margin: 1em 1em 0em 1em;
 }
+
+/*
+    ***************
+    * NAV SECTION *
+    ***************
+*/
 
 .nav-section{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 5em;
+    position: sticky;
+    top: 0px;
+    background-color: rgba(24, 38, 52, 1);
+    z-index: 9;
 }
 
 .nav-splitter-design{
@@ -84,7 +94,7 @@ nav{
 
 .material-symbols-outlined{
     color: #34df34;
-    font-size: 3.5rem !important;
+    font-size: 250% !important;
     font-variation-settings: 'FILL' 0, 'GRAD' 0, 'wght' 250;
 }
 
@@ -98,22 +108,28 @@ nav:hover, nav:focus{
     border: 2px solid rgba(255, 255, 255, .4);
 }
 
-/*
-    *******************
-    ** ABOUT SECTION **
-    *******************
-*/
-
 .section{
-    margin: 12em 0em 0em 0em;
+    margin: 12em 0em 12em 0em;
 }
+
+.section-splitter{
+    height: .2em;
+    width: 90%;
+    background-color: white;
+    margin: 0 auto 0 auto; 
+}
+
+/*
+    *****************
+    * ABOUT SECTION *
+    *****************
+*/
 
 .about-sub-section{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 .photo{
     height: 20em;
     width: 50em;
@@ -124,9 +140,8 @@ nav:hover, nav:focus{
 .about-passage{
     color: white;
     font-family: 'Courier New', Courier, monospace;
-    margin: 0em 5em 0em 3em;
+    margin: 0em 3em 0em 3em;
 }
-
 .tags{
     color: white;
     font-family: 'Courier New', Courier, monospace;
@@ -134,24 +149,138 @@ nav:hover, nav:focus{
     opacity: 0.6;
 }
 
+/*
+    ******************
+    * SKILLS SECTION *
+    ******************
+*/
+
 .skills-container{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    width: 100%;
+    height: 25em;
 }
 
 .skills-container-one, .skills-container-two{
     display: flex;
     justify-content: space-around;
+    margin: 1em 1em 1em 1em;
 }
 
 .skill-icon{
     color: white;
-    font-size: 7em;
+    font-size: 5.5em;
 }
 
+/*
+    *******************
+    * PROJECT SECTION *
+    *******************
+*/
 
-@media  only screen and (max-width: 780px) {
+.project-details{
+    width: 65%;
+    margin: 0 auto 0 auto;
+}
+
+.collapsible{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: rgba(255, 255, 255, .2);
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    text-align: left;
+    padding: 1em;
+    margin: 1em 0 0 0;
+}
+
+.active, .collapsible:hover{
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.collapsible:after{
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after{
+    content: "\2212";
+}
+
+.content{
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: rgba(255, 255, 255, 1);
+    color: #182634 !important;
+}
+
+.content-tools{
+    color: #34df34;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.content p a{
+    text-decoration: none;
+    color: #182634;
+}
+
+/*
+    *******************
+    * CONTACT SECTION *
+    *******************
+*/
+
+
+
+/*
+    **********
+    * FOOTER *
+    **********
+*/
+
+
+
+
+/*
+    ***************
+    * MEDIA QUERY *
+    ***************
+*/
+
+
+@media only screen and (max-width: 780px) {
+    .logo-text{
+        font-size: 3em;
+    }
+
+    .logo-design{
+        display: none;
+    }
+
+    .intro-name{
+        font-size: 3em;
+    }
+
+    .intro-title{
+        font-size: 1em;
+        margin-top: 2em;
+    }
+
+    .nav-splitter-design{
+        display: none;
+    }
+
     .about-sub-section{
         flex-direction: column;
     }
@@ -161,11 +290,21 @@ nav:hover, nav:focus{
         height: 15em;
         margin-bottom: 2em;
     }
+
+    .skills-container{
+        flex-direction: row;
+        height: 35em;
+    }
+
+    .skills-container-one, .skills-container-two{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .skill-icon{
+        font-size: 4.5em;
+    }
+    
 }
 
-.section-splitter{
-    height: .2em;
-    width: 90%;
-    background-color: white;
-    margin: 0 auto 0 auto; 
-}
