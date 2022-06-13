@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=My+Soul&display=swap'); /*font-family: 'My Soul', cursive;*/
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap'); /*font-family: 'Playball', cursive; */
-/*
-#34df34; #182634 
-*/
 
+
+/*
+    ******************
+    ** HOME SECTION **
+    ******************
+*/
 
 body{
     background-color: #182634 !important;
@@ -52,7 +55,7 @@ body{
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5rem;
-    margin: .3em 2em 0em 7.5em;
+    margin: .3em 1em 0em 5em;
     text-transform: uppercase;
 }
 
@@ -81,6 +84,88 @@ nav{
 
 .material-symbols-outlined{
     color: #34df34;
-    font-size: 3.8em !important;
+    font-size: 3.5rem !important;
     font-variation-settings: 'FILL' 0, 'GRAD' 0, 'wght' 250;
+}
+
+.material-symbols-outlined:hover, .material-symbols-outlined:focus{
+    cursor: pointer;
+}
+
+nav:hover, nav:focus{
+    width: 33em;
+    height: 6em;
+    border: 2px solid rgba(255, 255, 255, .4);
+}
+
+/*
+    *******************
+    ** ABOUT SECTION **
+    *******************
+*/
+
+.section{
+    margin: 12em 0em 0em 0em;
+}
+
+.about-sub-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.photo{
+    height: 20em;
+    width: 50em;
+    border: 1px solid #34df34;
+    margin: 0em 3em 0em 3em;
+}
+
+.about-passage{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0em 5em 0em 3em;
+}
+
+.tags{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 3em 0em 3em 2em;
+    opacity: 0.6;
+}
+
+.skills-container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.skills-container-one, .skills-container-two{
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill-icon{
+    color: white;
+    font-size: 7em;
+}
+
+
+@media  only screen and (max-width: 780px) {
+    .about-sub-section{
+        flex-direction: column;
+    }
+
+    .photo{
+        width: 15em;
+        height: 15em;
+        margin-bottom: 2em;
+    }
+}
+
+.section-splitter{
+    height: .2em;
+    width: 90%;
+    background-color: white;
+    margin: 0 auto 0 auto; 
 }
