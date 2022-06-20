@@ -85,8 +85,8 @@ body{
 nav{
     border: 2px solid white;
     border-radius: 3em;
-    width: 32em;
-    height: 5em;
+    width: 38em;
+    height: 6em;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -103,8 +103,6 @@ nav{
 }
 
 nav:hover, nav:focus{
-    width: 33em;
-    height: 6em;
     border: 2px solid rgba(255, 255, 255, .4);
 }
 
@@ -117,6 +115,22 @@ nav:hover, nav:focus{
     width: 90%;
     background-color: white;
     margin: 0 auto 0 auto; 
+}
+
+nav a{
+    text-decoration: none;
+    color: #34df34;
+
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: #34df34;
+}
+
+nav a p{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /*
@@ -249,9 +263,6 @@ nav:hover, nav:focus{
     **********
 */
 
-
-
-
 /*
     ***************
     * MEDIA QUERY *
@@ -305,6 +316,32 @@ nav:hover, nav:focus{
     .skill-icon{
         font-size: 4.5em;
     }
+
+    .nav-text{
+        font-size: .8em;
+        text-align: center;
+    }
+
+    nav{
+        border-radius: 0%;
+    }
     
+}
+
+@media (hover: hover){
+    .nav-text{
+        display: none;
+    }
+
+    nav a:hover > span{
+        display: none;
+    }
+
+    nav a:hover > .nav-text{
+        display: inline;
+        padding: 0.5em;
+        color: white;
+        text-transform: uppercase;
+    }
 }
 
