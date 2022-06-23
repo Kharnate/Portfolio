@@ -73,7 +73,7 @@ body{
     position: sticky;
     top: 0px;
     background-color: rgba(24, 38, 52, 1);
-    z-index: 9;
+    z-index: 99;
 }
 
 .nav-splitter-design{
@@ -84,7 +84,6 @@ body{
 
 nav{
     border: 2px solid white;
-    border-radius: 3em;
     width: 38em;
     height: 6em;
     display: flex;
@@ -161,6 +160,7 @@ nav a p{
     font-family: 'Courier New', Courier, monospace;
     margin: 3em 0em 3em 2em;
     opacity: 0.6;
+    font-size: 1.5em;
 }
 
 /*
@@ -255,6 +255,83 @@ nav a p{
     *******************
 */
 
+.form-controller{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 0 auto;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.form-icon-content{
+    width: 30%;
+}
+
+.form-application-content{
+    width: 70%;
+}
+
+.form-intro{
+    font-family: 'Courier New', Courier, monospace;
+    color: #34df34;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-input{
+    width: 60%;
+    border: 0;
+    color: white;
+    background-color: transparent;
+    margin: .5em 1em .5em 1em;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: .3em 1em .3em 1em;
+}
+
+.form-btn{
+    background-color: transparent;
+    border: 1px solid #34df34;
+    color: white;
+    padding: .5em 1.5em .5em 1.5em;
+    border-radius: 15px;
+    letter-spacing: .7px;
+}
+
+.form-btn:focus, .form-btn:hover{
+    color: #182634;
+    background-color: rgba(255, 255, 255, .9);
+    font-weight: bold;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus, 
+input[type=text]:hover, input[type=email]:hover, textarea:hover{
+    border: 1px solid #34df34;
+    outline: none;
+}
+
+.linkedin-icon, .github-icon{
+    font-size: 5em !important;
+    margin: .3em 1em .3em 1em;
+}
+
+.form-social-connect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
 
 
 /*
@@ -269,27 +346,18 @@ nav a p{
     ***************
 */
 
-
 @media only screen and (max-width: 780px) {
     .logo-text{
         font-size: 3em;
     }
 
-    .logo-design{
+    .logo-design, .nav-splitter-design{
         display: none;
-    }
-
-    .intro-name{
-        font-size: 3em;
     }
 
     .intro-title{
         font-size: 1em;
         margin-top: 2em;
-    }
-
-    .nav-splitter-design{
-        display: none;
     }
 
     .about-sub-section{
@@ -324,6 +392,19 @@ nav a p{
 
     nav{
         border-radius: 0%;
+    }
+
+    .tags{
+        font-size: .8em;
+    }
+
+    .form-controller{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .form-application-content, .form-icon-content{
+        width: 100%;
     }
     
 }
