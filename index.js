@@ -1,4 +1,4 @@
-function handleCollapsibleClickEvent(){
+function collapsibleClickEventHandler(){
     var collapsible = document.getElementsByClassName("collapsible");
 
     for(let i = 0; i < collapsible.length; i++){
@@ -15,4 +15,19 @@ function handleCollapsibleClickEvent(){
     }
 }
 
-handleCollapsibleClickEvent();
+function formInputValueHandler(){
+    var formInput = document.getElementsByClassName("form-input");
+
+    for(let i=0; i<formInput.length; i++){
+        formInput[i].onchange = function(e){
+            if(formInput[i].value !== ""){
+                formInput[i].style.borderBottom = "1px solid white";
+            }else{
+                formInput[i].style.borderBottom= "1px solid rgba(255, 255, 255, 0.5)";
+            }
+        }
+    }
+}
+
+collapsibleClickEventHandler();
+formInputValueHandler();
