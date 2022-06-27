@@ -20,7 +20,7 @@ function formInputValueHandler(){
 
     for(let i=0; i<formInput.length; i++){
         formInput[i].onchange = function(e){
-            if(formInput[i].value !== ""){
+            if(formInput[i].value !== "" || formInput[i].value.length !== 0){
                 formInput[i].style.borderBottom = "1px solid white";
             }else{
                 formInput[i].style.borderBottom= "1px solid rgba(255, 255, 255, 0.5)";

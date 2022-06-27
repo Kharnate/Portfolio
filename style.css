@@ -342,12 +342,15 @@ input[type=text]:hover, input[type=email]:hover, textarea:hover{
     justify-content: center;
 }
 
-
 /*
     **********
     * FOOTER *
     **********
 */
+
+footer{
+    background-color: rgba(255, 255, 255, .85);
+}
 
 .footer-background{
     display: flex;
@@ -394,11 +397,8 @@ footer a, .footer-name{
 
 footer a:hover{
     text-decoration: none;
-    color: #34df34;
+    color: #0f830f;
 }
-
-
-
 
 /*
     ***************
@@ -477,7 +477,7 @@ footer a:hover{
 
 }
 
-@media (hover: hover){
+@media (hover: hover) and (pointer: fine){
 
     nav a:hover > span, .nav-text{
         display: none;
@@ -488,6 +488,6 @@ footer a:hover{
         padding: 0.5em;
         color: white;
         text-transform: uppercase;
-    }
+    } 
 }
 
