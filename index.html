@@ -30,13 +30,14 @@
         <!-- NAV SECTION -->
         <section class="nav-section">
             <div class="nav-splitter-design"></div>
-            <nav>
+            <nav class="nav-menu">
                 <a href="#home-section"><span class="material-symbols-outlined icon-home">home</span><p class="nav-text">Home</p></a>
                 <a href="#about-section"><span class="material-symbols-outlined icon-about-me">person</span><p class="nav-text">About</p></a>
                 <a href="#skills-section"><span class="material-symbols-outlined icon-skills">developer_mode</span><p class="nav-text">Skills</p></a>
                 <a href="#project-section"><span class="material-symbols-outlined icon-project">folder_open</span><p class="nav-text">Projects</p></a>
                 <a href="#contact-section"><span class="material-symbols-outlined icon-contact-me">contacts</span><p class="nav-text">Contact</p></a>
             </nav>
+            <nav class="nav-menu scroll-tracker"></nav>
             <div class="nav-splitter-design"></div>
         </section>
 
@@ -49,9 +50,7 @@
             </div>
             <div>
                 <p class="about-passage">
-                    I got my first role as a Junior Software Developer in 2021. I am part of Front-End team. 
-                    I will be graduate in Dec 2022. Currently, I am focusing on building responisve web pages
-                    and my next goal is to learn React. (Replace the paragraph later)
+                    Currently in progress..............................
                 </p>
             </div>
         </div>
@@ -68,14 +67,12 @@
                     <i class="devicon-css3-plain-wordmark skill-icon"></i>
                     <i class="devicon-javascript-plain skill-icon"></i>
                     <i class="devicon-bootstrap-plain-wordmark skill-icon"></i>
-                    <i class="devicon-csharp-plain-wordmark skill-icon"></i>
                 </div>
                 <div class="skills-container-two">
+                    <i class="devicon-csharp-plain-wordmark skill-icon"></i>
                     <i class="devicon-dotnetcore-plain skill-icon"></i>
                     <i class="devicon-git-plain-wordmark skill-icon"></i>
                     <i class="devicon-github-original-wordmark skill-icon"></i>
-                    <i class="devicon-java-plain-wordmark skill-icon"></i>
-                    <i class="devicon-androidstudio-plain-wordmark skill-icon"></i>
                 </div>
             </div>
             <h3 class="tags">&lt;/skills&gt;</h3>
@@ -89,36 +86,36 @@
                 <button class="collapsible">Grocery List</button>
                 <div class="content">
                     <p>
-                        <a title="Go To Project" target="_blank" href="https://github.com/Kharnate/Product-Tracking">
-                            For this project I used SQLite Database to build a grocery list app. The data is saved 
-                            into the database and display the results in a RecycleView. This 
-                            project lasted for 2 weeks and I learned more about Java and Android 
-                            Studio. 
-                        </a>
+                        <span class="fw-bold">Description:</span> For this project I used SQLite Database to build a grocery list app. The data is saved 
+                        into the database and display the results in a RecycleView.
                     </p>
+                    <p><span class="fw-bold">Duration:</span> 1-2 weeks</p>
+                    <p><span class="fw-bold">Tools used:</span> Java, Android Stuido</p>
+                    <a class="project-link" target="_blank" href="https://github.com/Kharnate/Product-Tracking">Code</a>
                 </div>
                 <button class="collapsible">Order A Car</button>
                 <div class="content">
                     <p>
-                        <a title="Go To Project" target="_blank" href="https://github.com/quaide/order-a-car">
-                            Created an Uber like GUI application with two types of user rider and driver. This project had a 
-                            group of 6 people. In this project I did Front-End work and my task was to make a GUI design for 
-                            Login Scene, Driver Scene, Rider Scene and Registraion Scene.  
-                        </a>
+                        <span class="fw-bold">Description:</span> Created an Uber like GUI application with two types of user rider and driver. This project had a 
+                        group of 6 people. In this project I did Front-End work and my task was to make a GUI design for 
+                        Login Scene, Driver Scene, Rider Scene, Registraion Scene and adding functionality.  
                     </p>
+                    <p><span class="fw-bold">Duration:</span> 4-6 weeks</p>
+                    <p><span class="fw-bold">Tools used:</span> Java, Android Studio, Scene Builder</p>
+                    <a class="project-link" target="_blank" href="https://github.com/quaide/order-a-car">Code</a>
                 </div>
                 <button class="collapsible">Product Tracking</button>
                 <div class="content">
                     <p>
-                        <a title="Go To Project" target="_blank" href="https://github.com/Kharnate/Product-Tracking">
-                            Software for a media player production facility that will keep track 
-                            of what products are produced. Program includes the catalog, allows 
-                            user to enter new product, employee accounts can be made, production 
-                            statistic can be displayed and total display on number of production 
-                            for different types. The time period for this project was 6 weeks. 
-                            During this time I experienced C++ and CLion.
-                        </a>
+                        <span class="fw-bold">Description:</span> Software for a media player production facility that will keep track 
+                        of what products are produced. Program includes the catalog, allows 
+                        user to enter new product, employee accounts can be made, production 
+                        statistic can be displayed and total display on number of production 
+                        for different types.
                     </p>
+                    <p><span class="fw-bold">Duration:</span> 6 weeks</p>
+                    <p><span class="fw-bold">Tools used:</span> C++</p>
+                    <a class="project-link" target="_blank" href="https://github.com/Kharnate/Product-Tracking">Code</a>
                 </div>
             </div>
             <h3 class="tags">&lt;/projects&gt;</h3>
@@ -136,7 +133,7 @@
                     </div>
                 </div>
                 <div class="form-content form-application-content">
-                    <form class="contact-form m-4" autocomplete="off" action="" method="POST">
+                    <form class="contact-form m-4" autocomplete="off" action="https://formsubmit.co/kharnate@gmail.com" method="POST">
                         <input class="form-input" type="email" id="sender-email" placeholder="Email" required> 
                         <input class="form-input"  type="text" id="sender-name" placeholder="Name"  required>
                         <input class="form-input"  type="text" id="email-subject" placeholder="Subject">
@@ -154,7 +151,8 @@
                 <div class="footer-left-side">
                     <h3 class="footer-name"><span class="names-initial">K</span>ARAN <span class="names-initial">P</span>ATEL</h3>
                     <div class="footer-icons-links">
-                        
+                        <a target="_blank" href="https://www.linkedin.com/in/karanpatel97/"><i class="devicon-linkedin-plain footer-icon"></i></a>
+                        <a target="_blank" href="https://github.com/Kharnate"><i class="devicon-github-original footer-icon mx-3"></i></a>
                     </div>
                 </div>
                 <div class="footer-right-side">
@@ -167,7 +165,8 @@
                     </div>
                 </div>
             </div>
+            <div class="copyright-container">Copyright &copy; 2022 Karan Patel. All Rights Reserved</div>
         </Footer>
-        <script src="index.js"></script>
+        <script src="index.js" type="module"></script>
     </body>
 </html>
