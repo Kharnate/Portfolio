@@ -34,7 +34,7 @@ function formInputValueHandler(){
 
 function scrollStyleHandler(){
     const navScrollTracker = document.querySelector(".scroll-tracker");
-
+    
     const scrollTimeline = new ScrollTimeline({
         source: document.scrollingElement,
         orientation: "block",
