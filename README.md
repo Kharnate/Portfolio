@@ -3,4 +3,4 @@
 Coming Soon ....
 <br>
 <br>
-Check the link for the updates, https://kharnate.github.io/Portfolio/
+Check the link: https://kharnate.github.io/Portfolio/
