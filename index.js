@@ -53,6 +53,10 @@ function scrollStyleHandler(){
 
 }
 
+function downloadResume(){
+    alert("Resume Downloaded!")
+}
+
 
 scrollStyleHandler();
 collapsibleClickEventHandler();

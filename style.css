@@ -253,12 +253,22 @@ nav a{
     line-height: 1.75em;
     word-spacing: .3em;
 }
+
 .tags{
     color: white;
     font-family: 'Courier New', Courier, monospace;
     margin: 3em 0em 3em 2em;
     opacity: 0.6;
     font-size: 1.5em;
+}
+
+.about-passage p a{
+    color: rgba(52, 223, 52, 0.67);
+    text-decoration: none;
+}
+
+.about-passage p a:hover{
+    color: rgba(52, 223, 52, 1);
 }
 
 /*
@@ -462,7 +472,6 @@ footer{
 }
 
 .footer-name{
-    margin: 0.5em 0;
     font-family: 'Courier Prime';
     font-weight: 400;
     color: #182634;
@@ -504,6 +513,16 @@ footer a, .footer-name{
     width: 100%;
     text-align: center;
 }
+
+.resume-btn{
+    background-color: rgba(52, 223, 52, 0.8);
+    margin-top: 1em;
+    outline: none;
+    border: 1px solid #182634;
+    padding: 0.45em 0.5em;
+    border-radius: 10%;
+}
+
 
 /*
     ***************
