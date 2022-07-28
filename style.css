@@ -53,8 +53,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    animation-name: backgroundAnimation;
-    animation-duration: 4s;
+    animation: backgroundAnimation 3s infinite;
 }
 
 .intro-name{
@@ -98,19 +97,19 @@ body{
 
 @keyframes backgroundAnimation{
     0%{
-        box-shadow: 0em 4px 100px 10px rgba(52, 223, 52, 0.45);
+        box-shadow: 0em 4px 100px 10px rgba(52, 223, 52, 0.0);
     }
     25%{
         box-shadow: 0em 4px 100px 10px rgba(52, 223, 52, 0.25);
     }
     50%{
-        box-shadow: 0em 4px 100px 10px rgba(52, 223, 52, 0.50);
+        box-shadow: 0em 4px 100px 10px rgba(52, 223, 52, 0.45);
     }
     75%{
-        box-shadow: 0em 4px 100px 10px rgba(52, 223, 52, 0.40);
+        box-shadow: 0em 4px 100px 10px rgba(52, 223, 52, 0.50);
     }
     100%{
-        box-shadow: 0em 4px 100px 10px rgba(52, 223, 52, 0.67);
+        box-shadow: 0em 4px 100px 10px rgba(52, 223, 52, 0.65);
     }
 }
 
@@ -233,13 +232,14 @@ nav a{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
+    gap: 5em;
 }
 
 .photo-frame{
     height: 20em;
-    width: 50em;
+    width: 35%;
     margin: 0em 3em;
     position: relative;
     border: 1px solid green;
@@ -248,7 +248,7 @@ nav a{
 .about-passage{
     color: white;
     font-family: 'Courier New', Courier, monospace;
-    width: 90%;
+    width: 65%;
     margin: 1em auto;
     line-height: 1.75em;
     word-spacing: .3em;
@@ -271,6 +271,10 @@ nav a{
     color: rgba(52, 223, 52, 1);
 }
 
+.about-interest{
+    gap: 5em;
+}
+
 /*
     ******************
     * SKILLS SECTION *
@@ -281,15 +285,15 @@ nav a{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    width: 70%;
+    width: 60%;
     height: 25em;
     margin: 0 auto;
 }
 
-.skills-container-one, .skills-container-two{
+.skills-container-one, .skills-container-two, .skills-container-three{
     display: flex;
     justify-content: space-around;
-    margin: 1em;
+    margin: 2em;
 }
 
 .skill-icon{
@@ -515,12 +519,18 @@ footer a, .footer-name{
 }
 
 .resume-btn{
-    background-color: rgba(52, 223, 52, 0.8);
+    background-color: rgb(112, 197, 112);
     margin-top: 1em;
     outline: none;
     border: 1px solid #182634;
-    padding: 0.45em 0.5em;
-    border-radius: 10%;
+    padding: 0.35em 0.5em;
+    border-radius: 1%;
+    font-weight: 500;
+}
+
+.resume-btn:hover{
+    background-color: #182634;
+    color: rgb(112, 197, 112);
 }
 
 
@@ -559,21 +569,30 @@ footer a, .footer-name{
         margin-bottom: 2em;
     }
 
+    .about-interest{
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .about-interest ul{
+        margin-bottom: 1em;
+    }
+
     .skills-container{
         flex-direction: row;
         height: 35em;
         width: 95%;
     }
 
-    .skills-container-one, .skills-container-two, .form-controller,
-     .about-sub-section{
+    .skills-container-one, .skills-container-two, .skills-container-three,
+    .form-controller, .about-sub-section{
         flex-direction: column;
         width: 100%;
         align-items: center;
     }
 
     .skill-icon{
-        font-size: 4.5em;
+        font-size: 3.5em;
     }
 
     .nav-text{
