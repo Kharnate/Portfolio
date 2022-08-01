@@ -12,6 +12,21 @@ html{
     scroll-padding-top: 190px;
 }
 
+::-webkit-scrollbar{
+    width: .5em;
+}
+
+::-webkit-scrollbar-track{
+   background-color: #182634;
+   border-radius: 100vw;
+   margin-block: .4em;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: white;
+  border-radius: 100vw;
+}
+
 /*
     ****************
     * HOME SECTION *
@@ -450,7 +465,7 @@ input[type=text]:hover, input[type=email]:hover, textarea:hover{
 }
 
 footer{
-    background-color: white;
+    background-color: rgba(255, 255, 255, .82);
     z-index: 2;
 }
 
