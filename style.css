@@ -12,6 +12,12 @@ html{
     scroll-padding-top: 190px;
 }
 
+body{
+    background-color: #182634 !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden;
+}
+
 ::-webkit-scrollbar{
     width: .5em;
 }
@@ -27,17 +33,82 @@ html{
   border-radius: 100vw;
 }
 
+.loader-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #182634;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: 100;
+}
+
+.loader{
+    display: flex;
+    width: 4em;
+    height: 4em;
+    position: relative;
+    border: 3px solid #fff;
+    animation: loader-animation 3s infinite ease;
+}
+
+.loader-inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #34df34;
+    font-size: 1.7em;
+    animation: loader-inner-animation 3s infinite ease;
+}
+
+@keyframes loader-animation {
+    0%{
+        transform: rotate(-45deg);
+    }
+    25%{
+        transform: rotate(-90deg);
+    }
+    50%{
+        transform: rotate(-135deg);
+    }
+    75%{
+        transform: rotate(-225deg);
+    }
+    100%{
+        transform: rotate(-315deg);
+    }
+}
+
+@keyframes loader-inner-animation {
+    0%{
+        transform: rotate(45deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(135deg);
+    }
+    75%{
+        transform: rotate(225deg);
+    }
+    100%{
+        transform: rotate(315deg);
+    }
+}
+
 /*
     ****************
     * HOME SECTION *
     ****************
 */
-
-body{
-    background-color: #182634 !important;
-    overflow-x: hidden !important;
-    overflow-y: scroll;
-}
 
 .logo-text{
     color: white;
@@ -76,7 +147,7 @@ body{
     font-size: 5.5rem;
     margin: 0em 1em;
     position: relative;
-    animation-name: introNameAnimation;
+    animation-name: intro-name-animation;
     animation-duration: 3s;
 }
 
@@ -87,11 +158,11 @@ body{
     text-transform: uppercase;
     margin: 1em;
     position: relative;
-    animation-name: introTitleAnimation;
+    animation-name: intro-title-animation;
     animation-duration: 3s;
 }
 
-@keyframes introNameAnimation {
+@keyframes intro-name-animation {
     0%{ 
         right: 100%;
     }
@@ -100,7 +171,7 @@ body{
     }
 }
 
-@keyframes introTitleAnimation {
+@keyframes intro-title-animation {
     0%{ 
         left: 100%;
     }
@@ -132,7 +203,7 @@ body{
     height: .2em;
     width: 10%;
     transform-origin: left;
-    animation: navSplitterAnimation;
+    animation: nav-splitter-animation;
     animation-duration: 4s;
 }
 
@@ -143,7 +214,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    animation: navMenuAnimation;
+    animation: nav-menu-animation;
     animation-duration: 4s;
 }
 
@@ -182,7 +253,7 @@ nav a{
     color: #34df34;
 }
 
-@keyframes navSplitterAnimation {
+@keyframes nav-splitter-animation {
     0%{
         background-color:  rgba(255, 255, 255, 0.70);
     }
@@ -200,7 +271,7 @@ nav a{
     }
 }
 
-@keyframes navMenuAnimation {
+@keyframes nav-menu-animation {
     0%{
         border-color:  rgba(255, 255, 255, 0.70);
     }
@@ -519,23 +590,8 @@ footer a, .footer-name{
     color: #182634;
     width: 100%;
     text-align: center;
+    margin-top: 2em;
 }
-
-.resume-btn{
-    background-color: rgb(112, 197, 112);
-    margin-top: 1em;
-    outline: none;
-    border: 1px solid #182634;
-    padding: 0.35em 0.5em;
-    border-radius: 1%;
-    font-weight: 500;
-}
-
-.resume-btn:hover{
-    background-color: #182634;
-    color: rgb(112, 197, 112);
-}
-
 
 /*
     ***************
@@ -630,7 +686,6 @@ footer a, .footer-name{
     .footer-name, .footer-icon{
         font-size: 1.55em;
     }
-
 
 }
 

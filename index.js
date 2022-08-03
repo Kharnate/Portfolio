@@ -1,5 +1,19 @@
 import 'https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js';
 
+var setPageLoadInterval;
+
+window.onload = () => {
+     setPageLoadInterval =  setInterval(()=>{
+        document.body.style.overflowY = "scroll"
+        document.getElementById("loader-wrapper").style.opacity = "0";
+        clearPageLoadInterval();
+    }, 3000);
+}
+
+function clearPageLoadInterval(){
+    clearInterval (setPageLoadInterval);
+}
+
 function collapsibleClickEventHandler(){
     var collapsible = document.getElementsByClassName("collapsible");
 
