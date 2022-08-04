@@ -59,6 +59,7 @@ body{
 .loader-inner{
     width: 100%;
     height: 100%;
+    font-family: "Playball", cursive;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,6 +150,7 @@ body{
     position: relative;
     animation-name: intro-name-animation;
     animation-duration: 3s;
+    animation-delay: 3s
 }
 
 .intro-title{
@@ -160,6 +162,7 @@ body{
     position: relative;
     animation-name: intro-title-animation;
     animation-duration: 3s;
+    animation-delay: 3s;
 }
 
 @keyframes intro-name-animation {
@@ -205,6 +208,7 @@ body{
     transform-origin: left;
     animation: nav-splitter-animation;
     animation-duration: 4s;
+    animation-delay: 3s;
 }
 
 .nav-menu{
@@ -216,6 +220,7 @@ body{
     align-items: center;
     animation: nav-menu-animation;
     animation-duration: 4s;
+    animation-delay: 3s;
 }
 
 .scroll-tracker{

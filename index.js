@@ -1,18 +1,18 @@
 import 'https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js';
 
-var setPageLoadInterval;
-
 window.onload = () => {
-     setPageLoadInterval =  setInterval(()=>{
-        document.body.style.overflowY = "scroll"
-        document.getElementById("loader-wrapper").style.opacity = "0";
-        clearPageLoadInterval();
-    }, 3000);
+    if(window.scrollY == 0){
+        var setPageLoadInterval =  setInterval(()=>{
+            document.body.style.overflowY = "scroll";
+            document.getElementById("loader-wrapper").style.display = "none";
+            clearInterval (setPageLoadInterval);
+        }, 3000);
+    } else{
+        document.getElementById("loader-wrapper").style.display = "none";
+        document.body.style.overflowY = "scroll";
+    }
 }
 
-function clearPageLoadInterval(){
-    clearInterval (setPageLoadInterval);
-}
 
 function collapsibleClickEventHandler(){
     var collapsible = document.getElementsByClassName("collapsible");
@@ -66,11 +66,6 @@ function scrollStyleHandler(){
     );
 
 }
-
-function downloadResume(){
-    alert("Resume Downloaded!")
-}
-
 
 scrollStyleHandler();
 collapsibleClickEventHandler();
