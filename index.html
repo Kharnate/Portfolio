@@ -12,6 +12,7 @@
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/minecraftia" type="text/css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
         <link href='https://fonts.googleapis.com/css?family=Courier Prime' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
         <title>Karan Patel</title>
     </head>
     <body>
@@ -124,63 +125,15 @@
         <!-- PROJECT SECTION -->
         <section class="project-section section" id="project-section">
             <h3 class="tags">&lt;projects&gt;</h3>
-            <div class="project-details">
-                <button class="collapsible">Codex Discord Bot</button>
-                <div class="content">
-                    <p>
-                        <span class="fw-bold">Description:</span> <em>coming soon...</em>
-                    </p>
-                    <p><span class="fw-bold">Duration:</span> <em>in progress...</em></p>
-                    <p><span class="fw-bold">Tools used:</span> Node.js</p>
-                    <a class="project-link" target="_blank" href="">Code</a>
-                    <a class="project-link" target="_blank" href="">Demo</a>
-                </div>
-                <button class="collapsible">Cross Click</button>
-                <div class="content">
-                    <p>
-                        <span class="fw-bold">Description:</span> This is a web game based on HTML canvas element. The user has option to control the game settings
-                        before the game starts. During the game, the user has to click the enemies that are spawned at random locations before it disappears. 
-                    </p>
-                    <p><span class="fw-bold">Duration:</span> 3-4 weeks</p>
-                    <p><span class="fw-bold">Tools used:</span> JavaScript</p>
-                    <a class="project-link" target="_blank" href="https://github.com/Kharnate/Cross_Click">Code</a>
-                    <a class="project-link" target="_blank" href="https://kharnate.github.io/Cross_Click/">Demo</a>
-                </div>
-                <button class="collapsible">Grocery List</button>
-                <div class="content">
-                    <p>
-                        <span class="fw-bold">Description:</span> For this project I used SQLite Database to build a grocery list app. The data is saved 
-                        into the database and display the results in a RecycleView.
-                    </p>
-                    <p><span class="fw-bold">Duration:</span> 1-2 weeks</p>
-                    <p><span class="fw-bold">Tools used:</span> Java, Android Stuido</p>
-                    <a class="project-link" target="_blank" href="https://github.com/Kharnate/Product-Tracking">Code</a>
-                </div>
-                <button class="collapsible">Order A Car</button>
-                <div class="content">
-                    <p>
-                        <span class="fw-bold">Description:</span> Created an Uber like GUI application with two types of user rider and driver. This project had a 
-                        group of 6 people. In this project I did Front-End work and my task was to make a GUI design for 
-                        Login Scene, Driver Scene, Rider Scene, Registraion Scene and adding functionality.  
-                    </p>
-                    <p><span class="fw-bold">Duration:</span> 4-6 weeks</p>
-                    <p><span class="fw-bold">Tools used:</span> Java, Scene Builder</p>
-                    <a class="project-link" target="_blank" href="https://github.com/quaide/order-a-car">Code</a>
-                </div>
-                <button class="collapsible">Product Tracking</button>
-                <div class="content">
-                    <p>
-                        <span class="fw-bold">Description:</span> Software for a media player production facility that will keep track 
-                        of what products are produced. Program includes the catalog, allows 
-                        user to enter new product, employee accounts can be made, production 
-                        statistic can be displayed and total display on number of production 
-                        for different types.
-                    </p>
-                    <p><span class="fw-bold">Duration:</span> 6 weeks</p>
-                    <p><span class="fw-bold">Tools used:</span> C++</p>
-                    <a class="project-link" target="_blank" href="https://github.com/Kharnate/Product-Tracking">Code</a>
-                </div>
-            </div>
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                  <div class="card-wrapper swiper-wrapper">
+                  </div>
+                </div>     
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+              </div>
             <h3 class="tags">&lt;/projects&gt;</h3>
         </section>
         <div class="section-splitter"></div>
@@ -231,6 +184,7 @@
             </div>
             <div class="copyright-container">Copyright &copy; 2022 Karan Patel. All Rights Reserved</div>
         </Footer>
-        <script src="index.js" type="module"></script>
+        <script src="index.js" type="module" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     </body>
 </html>
