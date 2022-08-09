@@ -26,11 +26,11 @@ class Project{
 }
 
 function addProjectToList(){
-    projects.push(new Project("Codex Discord Bot", "Coming Soon...", "Node.js", "", ""));
-    projects.push(new Project("Cross Click", "This is a web game based on HTML canvas element. The user has option to control the game settingsbefore the game starts. During the game, the user has to click the enemies that are spawned at random locations before it disappears.", "JavaScript", "https://github.com/Kharnate/Cross_Click", "https://kharnate.github.io/Cross_Click/"));
-    projects.push(new Project("Grocery List", "For this project I used SQLite Database to build a grocery list app. The data is saved into the database and display the results in a RecycleView.", "Java, Android Studio", "https://github.com/Kharnate/Product-Tracking", "" ));
-    projects.push(new Project("Order A Car", "Created an Uber like GUI application with two types of user rider and driver. This project had a group of 6 people. In this project I did Front-End work and my task was to make a GUI design for Login Scene, Driver Scene, Rider Scene, Registraion Scene and adding functionality.", "Java, Scene Builder", "https://github.com/quaide/order-a-car" , ""));
-    projects.push(new Project("Product Tracking", " Software for a media player production facility that will keep track of what products are produced. Program includes the catalog, allows user to enter new product, employee accounts can be made, production statistic can be displayed and total display on number of production for different types.", "C++", "https://github.com/Kharnate/Product-Tracking", ""));
+    projects.push(new Project("Codex Discord Bot", "A Discord bot that receives data from the API in response to the user's commands. This allowed me to refine my JavaScript skills while also gaining experience with Node.js.", "Node.js", "", ""));
+    projects.push(new Project("Cross Click", "A unique web game based on the HTML Canvas element. This assisted me in learning the fundamentals and advanced features of JavaScript.", "JavaScript", "https://github.com/Kharnate/Cross_Click", "https://kharnate.github.io/Cross_Click/"));
+    projects.push(new Project("Grocery List", "I created a grocery list app using SQLite Database for this project. The data is saved to the database, and the results are displayed in a RecycleView.", "Java, Android Studio", "https://github.com/Kharnate/Product-Tracking", "" ));
+    projects.push(new Project("Order A Car", "Created an Uber-like graphical user interface application with two types of users: riders and drivers. This project had a team of six people. In this project, I worked on the front end, creating a GUI design for various scenes and adding functionality.", "Java, Scene Builder", "https://github.com/quaide/order-a-car" , ""));
+    projects.push(new Project("Product Tracking", "Software for a media player manufacturing facility that keeps track of what products are manufactured. The program includes a catalog, allows users to enter new products, create employee accounts, displays production statistics, and totals the number of productions for various types.", "C++", "https://github.com/Kharnate/Product-Tracking", ""));
 }
 
 function showProjectToWeb(){
@@ -51,6 +51,11 @@ function showProjectToWeb(){
         const description = document.createElement('p');
         description.classList.add('description');
         description.innerHTML = project.description;
+
+        const tools = document.createElement('p');
+        var defaultToolsText = "Tools Used:  ";
+        tools.classList.add('toolsUsed');
+        tools.innerHTML = defaultToolsText.bold() + project.toolsUsed;
 
         const links = document.createElement('div');
         links.classList.add("project-links");
@@ -75,6 +80,7 @@ function showProjectToWeb(){
 
         cardContent.appendChild(name);
         cardContent.appendChild(description);
+        cardContent.appendChild(tools);
         cardContent.appendChild(links);
         card.appendChild(cardContent);
         cardWrapper[0].appendChild(card);
