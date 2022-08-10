@@ -286,25 +286,9 @@ nav a {
     *****************
 */
 
-.about-sub-section {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 80%;
-  margin: 0 auto;
-  gap: 5em;
-}
-
-.my-icon {
-  color: white;
-  height: 100%;
-  width: 70%;
-  margin: 0 auto;
-}
-
 .about-passage {
   color: white;
-  width: 70%;
+  width: 75%;
   margin: 1em auto;
   line-height: 2em;
   word-spacing: 0.45em;
@@ -318,6 +302,13 @@ nav a {
   font-size: 1.5em;
 }
 
+.name-pronounce {
+  word-spacing: 0.15em;
+  font-style: italic;
+  opacity: 0.6;
+  white-space: nowrap;
+}
+
 .about-passage p a {
   color: rgba(52, 223, 52, 0.67);
   text-decoration: none;
@@ -325,10 +316,6 @@ nav a {
 
 .about-passage p a:hover {
   color: rgba(52, 223, 52, 1);
-}
-
-.about-interest {
-  gap: 5em;
 }
 
 /*
@@ -375,7 +362,6 @@ nav a {
   padding: 60px 0;
   overflow: hidden;
   border-radius: 25px;
-  height: auto !important;
 }
 
 .card {
@@ -384,8 +370,14 @@ nav a {
   border: 1px solid #34df34 !important;
 }
 
+.swiper-slide {
+  height: auto !important;
+}
+
 .card-content {
+  height: 100%;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   padding: 2em;
@@ -471,10 +463,11 @@ nav a {
 */
 
 .form-controller {
-  width: 55%;
+  width: 65%;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
+  gap: 1.5em;
 }
 
 img {
@@ -484,11 +477,11 @@ img {
 }
 
 .form-icon-content {
-  width: 30%;
+  width: 25%;
 }
 
 .form-application-content {
-  width: 70%;
+  width: 75%;
 }
 
 .form-intro {
@@ -610,6 +603,13 @@ footer a,
   font-weight: 600;
 }
 
+.footer-nav-links a:hover,
+.footer-nav-links a:active,
+.footer-nav-links a:focus {
+  text-decoration: none;
+  color: #34df34;
+}
+
 .footer-nav-links {
   display: flex;
   justify-content: center;
@@ -684,15 +684,10 @@ footer a,
   .skills-container-one,
   .skills-container-two,
   .skills-container-three,
-  .form-controller,
-  .about-sub-section {
+  .form-controller {
     flex-direction: column;
     width: 100%;
     align-items: center;
-  }
-
-  .about-sub-section {
-    gap: 1.5em;
   }
 
   .my-icon {
@@ -739,10 +734,6 @@ footer a,
   .footer-icon {
     font-size: 1.55em;
   }
-
-  .slide-content {
-    height: 10em;
-  }
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -761,23 +752,11 @@ footer a,
   .material-symbols-outlined:focus {
     cursor: pointer;
   }
-
-  .active,
-  .collapsible:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-
-  .project-link:hover,
-  footer a:hover {
-    text-decoration: none;
-    color: #34df34;
-  }
 }
 
 @media screen and (max-width: 768px) {
   .slide-content {
     margin: 0 10px;
-    height: 18em;
   }
 
   .swiper-navBtn {

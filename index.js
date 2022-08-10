@@ -39,7 +39,7 @@ function showProjectToWeb(){
     projects.forEach(project => {
         const card = document.createElement('div');
         card.classList.add('card');
-        card.classList.add('swiper-slide')
+        card.classList.add('swiper-slide');
 
         const cardContent = document.createElement('div');
         cardContent.classList.add("card-content");
@@ -69,7 +69,7 @@ function showProjectToWeb(){
             links.appendChild(codeBtn);
         }
 
-        if(project.demoLink != ""){
+        if(project.demoLink !== ""){
             const demoBtn = document.createElement('a');
             demoBtn.classList.add("project-btn");
             demoBtn.innerHTML = "Demo";
@@ -85,7 +85,6 @@ function showProjectToWeb(){
         card.appendChild(cardContent);
         cardWrapper[0].appendChild(card);
     });
-    
 }
 
 var swiper = new Swiper(".slide-content", {
@@ -104,15 +103,14 @@ var swiper = new Swiper(".slide-content", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-  
     breakpoints: {
       0: {
         slidesPerView: 1,
       },
-      520: {
+      650: {
         slidesPerView: 2,
       },
-      950: {
+      1000: {
         slidesPerView: 3,
       },
     },
@@ -150,12 +148,14 @@ function scrollStyleHandler(){
             timeline: scrollTimeline
         }
     );
-
 }
 
 scrollStyleHandler();
 formInputValueHandler();
 addProjectToList();
 showProjectToWeb();
+//getSwiperHeight();
+
+
 
   
